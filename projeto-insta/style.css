@@ -16,27 +16,29 @@ body {
   flex-direction: column;
 }
 
-footer {
+.footer {
+  display: flex;
+  flex-wrap: wrap;
   justify-items: center;
   height: 100px;
 }
 
-footer ul {
+.footer ul {
   display: flex;
   flex-direction: row;
 }
 
-footer ul li {
+.footer ul li {
   list-style: none;
   margin: 5px;
 }
 
-footer ul li a {
+.footer ul li a {
   text-decoration: none;
   color: gray;
 }
 
-footer ul li a:hover {
+.footer ul li a:hover {
   text-decoration: none;
   color: gray;
 }
