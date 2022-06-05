@@ -1,0 +1,16 @@
+.wrapper {
+  display: flex;
+  margin: auto;
+  width: 100%;
+  min-width: 320px;
+}
+
+.divedits {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}
+
+.input {
+  margin: 5px;
+}
