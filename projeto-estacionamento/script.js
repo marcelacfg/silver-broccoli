@@ -14,10 +14,14 @@
         function adicionar(veiculo, salva) {
             var _a, _b;
             const row = document.createElement("tr");
+            let classe;
+            patio().ler().length % 2 === 0
+                ? (classe = "linhapar")
+                : (classe = "linhaimpar");
             row.innerHTML = `
-        <td>${veiculo.nome}</td>
-        <td>${veiculo.placa}</td>
-        <td>${veiculo.entrada}</td>
+        <td class="${classe}">${veiculo.nome}</td>
+        <td class="${classe}">${veiculo.placa}</td>
+        <td class="${classe}">${veiculo.entrada}</td>
         
         <td>
           <button class="delete" data-placa=${veiculo.placa}>X</button>
