@@ -16,8 +16,8 @@ export const getQuote = () => {
     },
   };
 
-  return fetch("https://marvel-quote-api.p.rapidapi.com/", options).then(
-    (response) => response.json()
+  return fetch(process.env.REACT_APP_API, options).then((response) =>
+    response.json()
   );
   // .then((response) => console.log(response))
   // .catch((err) => console.error(err));
