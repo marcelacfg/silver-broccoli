@@ -1,10 +1,10 @@
 const pg = require("pg");
 
 const client = new pg.Client({
-  user: "carsoft",
-  host: "pgsql.carsoft.com.br",
-  database: "carsoft",
-  password: "car123",
+  user: "utebrngm",
+  host: "kesavan.db.elephantsql.com",
+  database: "utebrngm",
+  password: "tyzn7lfiDHjEIc-OqS3AnuvCqPcDBCud",
   port: 5432,
 });
 

@@ -1,10 +1,10 @@
 const Sequelize = require("sequelize");
 
 const sequelize = new Sequelize({
-  user: "carsoft",
-  host: "pgsql.carsoft.com.br",
-  database: "carsoft",
-  password: "car123",
+  user: "utebrngm",
+  host: "kesavan.db.elephantsql.com",
+  database: "utebrngm",
+  password: "tyzn7lfiDHjEIc-OqS3AnuvCqPcDBCud",
   port: 5432,
   dialect: "postgres",
   logging: false,
