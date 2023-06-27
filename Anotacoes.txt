@@ -1,1 +1,15 @@
-Teste
+Novo projeto
+Incializar o nome - npm init --y
+Instalar o typescript e  TSNode - npm i -D typescript ts-node-dev 
+Criar o src/index.ts
+Abrir o package json e criar o script - "dev": "ts-node-dev src/index.ts"
+Inicializar o Typescript - npx tsc --init
+Abrir o tsconfig e criar o "include":[ "src" ] após o objeto
+Descomentar o outDir. "outDir":"./build"
+Criar script "build":"rimraf ./build && tsc"
+Criar script "start":"node build/index.js"
+Tirar o build e o nodemodules do svn
+Instalar o express - npm i express
+Instalar os types express - npm i -D @types/express
+Instalar StatusCodes - npm i http-status-codes
+import { StatusCodes } from "http-status-codes";

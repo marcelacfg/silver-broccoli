@@ -12,6 +12,16 @@ app.use(express.urlencoded({ extended: true }));
 app.use(usersRoute);
 app.use(statusRoute);
 
+app.get("/teste", (req: Request, res: Response) => {
+  console.log("teste");
+  return res.status(200).json({ message: "OK" });
+});
+
+app.post("/teste", (req: Request, res: Response) => {
+  console.log("teste post");
+  return res.status(201).json({ message: "Teste Post" });
+});
+
 // Configuracao dos Handlers de Erro
 app.use(errorHandler);
 
